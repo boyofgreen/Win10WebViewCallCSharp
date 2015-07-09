@@ -17,7 +17,7 @@
 	        var communicationWinRT = new CommunicationWinRT.CommunicationWinRT();
 	        var cameraWinRT = new CommunicationWinRT.cameraWinRT();
 	        webview.addWebAllowedObject("jeffRocks", communicationWinRT);
-	       // webview.addWebAllowedObject("jeffRocks", cameraWinRT);
+	       // webview.addWebAllowedObject("jeffRocksCamera", cameraWinRT);
 	        webview.navigate("ms-appx-web:///page.html");
 	       // webview.navigate("https://testjeff.azurewebsites.net");
 
