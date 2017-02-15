@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebView Content</title>
+    <script type="text/javascript">
+        function reload() {
+            var object =  new CommunicationWinRT.CommunicationWinRT()
+
+            if (object) {
+                log('found');
+                object.toastMessage('Hello Web', 0);
+            } else {
+                log('Error');
+            }
+        }
+
+
+
+        function log(string) {
+            document.getElementById('log').innerHTML += string + '<br/>';
+        }
+
+
+
+    </script>
+</head>
+<body>
+    <div id="log">log</div>
+    <button onclick="reload();">Notify</button>
+
+   <p> <a href="ms-appx-web:///page3.html">go to page 3</a></p>
+<script src="ms-appx-web:///js/test.js"></script>
+</body>
+</html>

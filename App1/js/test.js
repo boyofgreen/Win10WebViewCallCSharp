@@ -1,0 +1,1 @@
+﻿console.log('this is a test from test.js')
